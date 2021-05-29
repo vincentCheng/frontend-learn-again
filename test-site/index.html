@@ -2,16 +2,65 @@
  * @Author: VincentCheng
  * @Date: 2021-05-29 18:32:49
  * @LastEditors: VincentCheng
- * @LastEditTime: 2021-05-29 18:40:11
+ * @LastEditTime: 2021-05-29 19:13:12
  * @FilePath: \FontendLearnAgain\test-site\index.html
+ * @Description: 参考文献：https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics
 -->
+
+<!-- HTML 尚在襁褓（大约是 1991/92 年）之时，
+	DOCTYPE 用来链接一些 HTML 编写守则，比如自动查错之类 -->
 <!DOCTYPE html>
+<!-- 根元素 -->
 <html>
+  <!-- 该元素的内容对用户不可见，
+		其中包含例如面向搜索引擎的搜索关键字（keywords）、
+		页面描述、CSS 样式表和字符编码声明等。 -->
   <head>
-    <meta charset="utf-8">
+    <!-- 该元素指定文档使用 UTF-8 字符编码 ，UTF-8 包括绝大多数人类已知语言的字符 -->
+    <meta charset="utf-8" />
+    <!-- 该元素设置页面的标题，
+			显示在浏览器标签页上，
+			也作为收藏网页的描述文字。 -->
     <title>我的测试页面</title>
+		<!-- href 是 hypertext reference 的缩写。超文本引用。 -->
+		<link rel="stylesheet" href="styles/style.css">
   </head>
+  <!-- 该元素包含期望让用户在访问页面时看到的内容，
+		包括文本、图像、视频、游戏、可播放的音轨或其他内容。 -->
   <body>
-    <img src="images/firefox-icon.jpg" alt="我的测试页面">
+    <!-- 这里可以看到alt的内容 -->
+    <img src="images/firefox-i777con.jpg" alt="我的测试页面" />
+
+    <h1>主标题</h1>
+    <h2>顶层标题</h2>
+    <h3>子标题</h3>
+    <h4>次子标题</h4>
+
+    <img src="images/firefox-icon.jpg" alt="我的测试页面" />
+    <!-- 这里注意：标签+内容=元素 -->
+    <p class="editor-note">
+      我的猫非常脾气
+      <strong>暴躁</strong>
+    </p>
+
+    <p>Mozilla 是一个全球社区，这里聚集着来自五湖四海的</p>
+
+		<!-- unordered list -->
+    <ul>
+      <li>技术人员</li>
+      <li>思考者</li>
+      <li>建造者</li>
+    </ul>
+
+    <p>我们致力于……</p>
+
+		<!-- a 超链接 是英文 anchor 的缩写 -->
+		<!-- 如果网址开始部分省略了 https:// 或者 http://，
+			可能会得到错误的结果。
+			在完成一个链接后，可以试着点击它来确保指向正确。 
+		
+			href 是 hypertext reference 的缩写。超文本引用。
+		-->
+		<a href="https://www.mozilla.org/zh-CN/about/manifesto/">Mozilla 宣言</a>
   </body>
 </html>
