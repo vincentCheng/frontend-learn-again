@@ -1,3 +1,66 @@
-p {
-  color: red;
+/*
+<html> 是整个页面的父元素，
+而且它所有的子元素都会继承相同的 font-size 和 font-family
+*/
+html {
+  /* 基础字号为10像素 */
+  font-size: 10px;
+  /* html中引入的css */
+  font-family: 'Open Sans', sans-serif;
+  background-color: #00539f;
+}
+
+/*
+ID 选择器 #my-id
+类选择器 .my-class
+属性选择器 img[src]
+伪（Pseudo）类选择器 a:hover
+*/
+h1 {
+  font-size: 60px;
+  text-align: center;
+  /* 默认有一个难看的外边距 */
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  /*
+	第一个值设置水平偏移值 —— 即阴影右移的像素数（负值左移）。
+	第二个值设置垂直偏移值 —— 即阴影下移的像素数（负值上移）。
+	第三个值设置阴影的模糊半径 —— 值越大产生的阴影越模糊。
+	第四个值设置阴影的基色。
+	*/
+  text-shadow: 3px 3px 1px black;
+  background-color: red;
+}
+
+p,
+li {
+  font-size: 16px;
+  /* line-height 后而可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+/* 
+文档体格式设置
+这里可以看到html元素的默认颜色是深蓝色
+是块级元素block，意味着它占据了页面的空间并且能够赋予外边距和其他改变间距的值。
+*/
+body {
+  width: 600px;
+  /* 在这里，auto 是一个特殊的值，意思是水平方向上左右对称 */
+  margin: 0 auto;
+  background-color: #ff9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+/* 
+图像居中 
+刚开始的时候发现img不是block，是内联元素，inline，也就是不能自动占满一行。
+这样设置就可以居中了。
+*/
+img {
+  display: block;
+  margin: 0 auto;
 }
