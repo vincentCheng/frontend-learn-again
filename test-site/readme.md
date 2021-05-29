@@ -1,7 +1,7 @@
 <!--
  * @Author: HuangGang
  * @Date: 2021-05-29 18:24:59
- * @LastEditTime: 2021-05-29 22:45:54
+ * @LastEditTime: 2021-05-29 23:43:40
  * @LastEditors: VincentCheng
  * @Description: 这里从头开始学习前端三大件。
  * @FilePath: \FontendLearnAgain\test-site\readme.md
@@ -38,3 +38,20 @@
 ### 事件
 - 事件能为网页添加真实的交互能力。它可以捕捉浏览器操作并运行一些代码做为响应。最简单的事件是 点击事件，鼠标的点击操作会触发该事件。 
 - localStorage 在这里能够达到cookie相同的功效。但是在F12中是看不到cookie字样的，只有 localStorage 字样。
+
+## 发布
+- 因为我的网站根目录和MDN中的差异，发布到github中无法看到。
+
+## 万维网是如何工作的
+- [参考文献](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+
+### 扩展阅读
+- 互联网是如何工作的
+- HTTP — 一种应用级协议
+- HTTP: 让我们开始吧！
+- HTTP: 响应代码
+
+## Web表单
+- [参考文献](https://developer.mozilla.org/zh-CN/docs/Learn/Forms)
+- 我在这里先看看http中的相关知识。form表单的method类型有 get/post 这里需要先了解。
+	- 这里有XSS和CSRF攻击介绍。
