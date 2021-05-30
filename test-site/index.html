@@ -2,7 +2,7 @@
  * @Author: VincentCheng
  * @Date: 2021-05-29 18:32:49
  * @LastEditors: VincentCheng
- * @LastEditTime: 2021-05-29 22:33:14
+ * @LastEditTime: 2021-05-30 16:42:13
  * @FilePath: \FontendLearnAgain\test-site\index.html
  * @Description: 参考文献：https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics
 -->
@@ -18,27 +18,42 @@
   <head>
     <!-- 该元素指定文档使用 UTF-8 字符编码 ，UTF-8 包括绝大多数人类已知语言的字符 -->
     <meta charset="utf-8" />
+		<!-- name 指定了meta 元素的类型； 说明该元素包含了什么类型的信息。 -->
+		<!-- content 指定了实际的元数据内容。 -->
+    <meta name="author" content="Chris Mills" />
+		<!-- description通常被搜索引擎搜到。并且显示在快照中。 -->
+    <meta
+      name="description"
+      content="The MDN Learning Area aims to provide
+complete beginners to the Web with all they need to know to get
+started with developing web sites and applications."
+    />
+		<!-- 这个超级小的图标会出现在书签面板中，16*16 。还有iPhone设备中显示的图标等等。-->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- 该元素设置页面的标题，
 			显示在浏览器标签页上，
 			也作为收藏网页的描述文字。 -->
     <title>我的测试页面</title>
-		<!-- href 是 hypertext reference 的缩写。超文本引用。 -->
-		<link rel="stylesheet" href="styles/style.css">
-		<!-- 对字体的应用 -->
-		<link rel="stylesheet" href="https://fonts.font.im/css?family=Open+Sans" type="text/css">
+    <!-- href 是 hypertext reference 的缩写。超文本引用。 -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- 对字体的应用 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.font.im/css?family=Open+Sans"
+      type="text/css"
+    />
   </head>
   <!-- 该元素包含期望让用户在访问页面时看到的内容，
 		包括文本、图像、视频、游戏、可播放的音轨或其他内容。 -->
   <body>
-		
-		<h1>主标题</h1>
+    <h1>主标题</h1>
     <h2>顶层标题</h2>
     <h3>子标题</h3>
     <h4>次子标题</h4>
-		
+
     <!-- 这里可以看到alt的内容 -->
     <!-- <img src="images/firefox-i777con.jpg" alt="我的测试页面" /> -->
-		
+
     <img src="images/firefox-icon.jpg" alt="我的测试页面" />
     <!-- 这里注意：标签+内容=元素 -->
     <p class="editor-note">
@@ -48,7 +63,7 @@
 
     <p>Mozilla 是一个全球社区，这里聚集着来自五湖四海的</p>
 
-		<!-- unordered list -->
+    <!-- unordered list -->
     <ul>
       <li>技术人员</li>
       <li>思考者</li>
@@ -57,18 +72,18 @@
 
     <p>我们致力于……</p>
 
-		<!-- a 超链接 是英文 anchor 的缩写 -->
-		<!-- 如果网址开始部分省略了 https:// 或者 http://，
+    <!-- a 超链接 是英文 anchor 的缩写 -->
+    <!-- 如果网址开始部分省略了 https:// 或者 http://，
 			可能会得到错误的结果。
 			在完成一个链接后，可以试着点击它来确保指向正确。 
 		
 			href 是 hypertext reference 的缩写。超文本引用。
 		-->
-		<a href="https://www.mozilla.org/zh-CN/about/manifesto/">Mozilla 宣言</a>
+    <a href="https://www.mozilla.org/zh-CN/about/manifesto/">Mozilla 宣言</a>
 
-		<button>切换用户</button>
+    <button>切换用户</button>
 
-		<!-- 我们将 <script> 放在HTML文件的底部附近的原因是浏览器会按照代码在文件中的顺序加载 HTML -->
-		<script src="scripts/main.js" defer></script>
+    <!-- 我们将 <script> 放在HTML文件的底部附近的原因是浏览器会按照代码在文件中的顺序加载 HTML -->
+    <script src="scripts/main.js" defer></script>
   </body>
 </html>
