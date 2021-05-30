@@ -1,0 +1,53 @@
+<!--
+ * @Author: VincentCheng
+ * @Date: 2021-05-30 16:46:42
+ * @LastEditors: VincentCheng
+ * @LastEditTime: 2021-05-30 18:00:43
+ * @FilePath: \FontendLearnAgain\html-url\index.html
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>超链接</title>
+  </head>
+  <body>
+    <p>
+      我创建了一个指向
+      <a
+        href="https://www.mozilla.org/zh-CN/"
+        title="了解 Mozilla 使命以及如何参与贡献的最佳站点。"
+        >Mozilla 主页</a
+      >
+      的超链接。
+    </p>
+
+    <!-- 用图像当做超链接 -->
+    <a href="https://www.mozilla.org/zh-CN/">
+      <img src="favicon.ico" alt="链接至 Mozilla 主页的 Mozilla 标志" />
+    </a>
+
+    <h2 id="Mailing_address">邮寄地址</h2>
+    <p>
+      要提供意见和建议，请将信件邮寄至
+
+      <!-- 
+				这个写法是直接跳转到contacts.html中的这个id
+				这个和直接跳转有什么区别？
+				没什么区别啊。
+				区别就在于旁边的拖动条，可以直接移动到目的地。
+			-->
+      <a href="contacts.html">看看有什么区别</a>。
+      <a href="contacts.html#Mailing_address">我们的地址</a>。
+    </p>
+
+		<!-- 同源URL中使用download属性 -->
+    <a
+      href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=zh-CN"
+      download="firefox-latest-64bit-installer.exe"
+    >
+      下载最新的 Firefox 中文版 - Windows（64位）
+    </a>
+  </body>
+</html>
